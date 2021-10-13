@@ -1,4 +1,4 @@
-# Install script for directory: /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/tests/test01_proofOfWork
+# Install script for directory: /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/tests/test01_proofOfWork
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

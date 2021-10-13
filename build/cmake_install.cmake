@@ -1,4 +1,4 @@
-# Install script for directory: /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable
+# Install script for directory: /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/tests/test01_proofOfWork/cmake_install.cmake")
+  include("/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/tests/test01_proofOfWork/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

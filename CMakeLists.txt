@@ -1,52 +1,46 @@
-# Die folgenden beiden Angaben muessen in einer CMakeLists.txt am Anfang stehen. Vorher 'include' nicht moeglich
+# Got to be on top (i.e. else no 'include' possible
 cmake_minimum_required(VERSION 3.21.2)
 
-# ProjektName (dieser CMakeLists.txt-Ebene) festlegen
-# VariablenName des ProjectName: This -> ${This}
-# FileName des Projects/der spaeteren executable: ProjectLotto -> ProjectLotto.exe
+# projektname
 set (This
-    ProjectLotto)
+    MainProject_ToTest)
 
 project(${This}
     LANGUAGES CXX
     VERSION 1.000)
 
-# Standardparameter setzen (outsourcing zwecks Uebersichtlichkeit)
+# set standardparameter
 include (./CMakeDefaults.txt)
-# googleTest verfuegbar machen/aktivieren
-## Tests ueberhaupt aktivieren
+# make googleTest available
+## make testing avialabe (in general)
 enable_testing()
 
-# keine Ahnug wofuer das ist
-## include(GoogleTest)
-
-## Googletest-package einbinden
+## make specific googleTest availabe and integrate the package
 find_package(GTest REQUIRED)
 
-# Die Sub-CMakeLists.txt der Tests einbinden (um die TestCodes vom eigentlichen Code getrennt zu halten)
+# keeping testcode and acutal project testcode separated by own test-dir and own CMakeList.txt. Integrating the sub-CMakeLists.txt in the acutal CMakeLists.txt
 add_subdirectory(./tests/test01_proofOfWork)
 
 # Custom Variables
-set(QUELLE src/main.cpp)
-set(ZIEL finalExecutable)
+set(M_source src/main.cpp)
+set(M_target finalExecutable)
 
-# Eine Library einbinden (mit .cpp und deren zugehoerigen header)
+# integrate a librariy (.cpp + its header)
 set(LIB_1 addition)
 
-add_library(                                #Schritt 1: Library/cpp Datei hinzufuegen
-    ${LIB_1}                                #Definition: Der Name der Lib wird (zum spaeteren Gebrauch) initialisiert
-    STATIC src/addition/addition.cpp        #Die Library/Quelle, die man hinzufuegen moechte /deren Funktionen man braucht
+add_library(                                # Step 1: adding the lib/cpp
+    ${LIB_1}                                # Definition: Initialising the Name of the lib (to be able to refernce it later on)
+    STATIC src/addition/addition.cpp        # Library/Source, you want to add/use
     )
 
-target_include_directories(              #Schritt2: Die zugehoerige .hpp hinzufuegen und mit der Library verbinden
-    ${LIB_1}                             #Definition: Das Target wird (zum spaeteren Gebrauch) initialisiert
-    PUBLIC include/addition             #(Compiler) hat nur interne Sicht auf das Target; zudem der Pfad, der includiert werden soll (fuehrt zur .hpp Datei)
+target_include_directories(              # Step2: adding the .hpp which the .cpp belongs to
+    ${LIB_1}                             # Definition: Das Target wird (zum spaeteren Gebrauch) initialisiert
+    PUBLIC include/addition              # Path to the specific .hpp; deciding if the compiler just got intern view of the target
     )
 
-add_executable(${ZIEL} ${QUELLE})       #Die Executable hinzufuegen. Diese legt den Namen der Ausfuehrungsdatei fest und braucht die .cpp aus der diese Ausfuehrungsdatei erzeugt wird
+add_executable(${M_target} ${M_source})       #Adding the executable and defininig its name
 
-target_link_libraries(                  # Schritt3: Die hinzuzufuegende Lib in der Datei, in der sie benoetigt wird, bekannt machen
-    ${ZIEL}                             # Die Datei angeben, in der die Library/cpp Datei gebraucht wird
-    PRIVATE ${LIB_1}                    # Angeben welche Library gebraucht wird
-    #    PUBLIC ${LIB_1}                    # Angeben welche Library gebraucht wird
+target_link_libraries(                  # Step 3: announcing the added lib to the file, in which the lib is required
+    ${M_target}                         # the file which requires the lib
+    PRIVATE ${LIB_1}                    # the lib which is required by the file
     )

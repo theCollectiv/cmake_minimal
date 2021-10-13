@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/include/addition
+CXX_INCLUDES = -I/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/include/addition
 
 CXX_FLAGS = -ggdb3 -Werror -Wall -Wextra -pedantic-errors -Wconversion -Wsign-conversion -std=gnu++17
 

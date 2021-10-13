@@ -1,5 +1,5 @@
 // tests.cpp
-#include "./../../include/addition/addition.hpp"
+#include <addition.hpp>
 //#include "whattotest.cpp"
 #include <gtest/gtest.h>
 #include <gtest/internal/gtest-internal.h>

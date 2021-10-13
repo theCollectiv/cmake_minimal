@@ -1,17 +1,17 @@
 [
 {
-  "directory": "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build",
-  "command": "/usr/bin/c++  -I/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/include/addition -ggdb3 -Werror -Wall -Wextra -pedantic-errors -Wconversion -Wsign-conversion -std=gnu++17 -o CMakeFiles/addition.dir/src/addition/addition.cpp.o -c /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/src/addition/addition.cpp",
-  "file": "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/src/addition/addition.cpp"
+  "directory": "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build",
+  "command": "/usr/bin/c++  -I/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/include/addition -ggdb3 -Werror -Wall -Wextra -pedantic-errors -Wconversion -Wsign-conversion -std=gnu++17 -o CMakeFiles/addition.dir/src/addition/addition.cpp.o -c /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/src/addition/addition.cpp",
+  "file": "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/src/addition/addition.cpp"
 },
 {
-  "directory": "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build",
-  "command": "/usr/bin/c++  -I/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/include/addition -ggdb3 -Werror -Wall -Wextra -pedantic-errors -Wconversion -Wsign-conversion -std=gnu++17 -o CMakeFiles/finalExecutable.dir/src/main.cpp.o -c /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/src/main.cpp",
-  "file": "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/src/main.cpp"
+  "directory": "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build",
+  "command": "/usr/bin/c++  -I/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/include/addition -ggdb3 -Werror -Wall -Wextra -pedantic-errors -Wconversion -Wsign-conversion -std=gnu++17 -o CMakeFiles/finalExecutable.dir/src/main.cpp.o -c /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/src/main.cpp",
+  "file": "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/src/main.cpp"
 },
 {
-  "directory": "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/tests/test01_proofOfWork",
-  "command": "/usr/bin/c++ -DGTEST_LINKED_AS_SHARED_LIBRARY=1  -ggdb3 -Werror -Wall -Wextra -pedantic-errors -Wconversion -Wsign-conversion -DGTEST_HAS_PTHREAD=1 -std=gnu++17 -o CMakeFiles/runTest.dir/tests.cpp.o -c /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/tests/test01_proofOfWork/tests.cpp",
-  "file": "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/tests/test01_proofOfWork/tests.cpp"
+  "directory": "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/tests/test01_proofOfWork",
+  "command": "/usr/bin/c++ -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -I/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/include/addition -ggdb3 -Werror -Wall -Wextra -pedantic-errors -Wconversion -Wsign-conversion -DGTEST_HAS_PTHREAD=1 -std=gnu++17 -o CMakeFiles/runTest.dir/tests.cpp.o -c /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/tests/test01_proofOfWork/tests.cpp",
+  "file": "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/tests/test01_proofOfWork/tests.cpp"
 }
 ]

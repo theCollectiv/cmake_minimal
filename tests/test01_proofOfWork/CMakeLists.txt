@@ -1,51 +1,29 @@
-# Name des Tests festlegen
-#   VariablenName des Tests: This -> ${This}
-#   FileName des Tests: Exampletest -> ExampleTest.exe
+#   determine the Name of the test
+#   name of the test-variable: This -> ${This}
+#   FileName of the test: runTest -> runTest.exe
 set (This
     runTest)
 
-# Ort der Tests:
-#   VariablenName fuer die Location der zu testenden Datei: Sources -> ${Sources}
-#   FileLocation des Testes: ./tests.cpp -> test.cpp
-#   Wenn es mehrere Testfiles gibt, muessen die hier geaddet werden
+#   location of the test(s)
+#   variable_name for the location of the file including the testcases
+#   FileLocation of the test(s; can be multiple): ./tests.cpp -> test.cpp
 set (Sources
     tests.cpp)
 
-# Link runTests with what we want to test and the GTest and pthread library
+# Linking runTests with what we want to test and the GTest
 add_executable(${This} ${Sources})
 
-# Was man als libraries braucht, um einen Test einzubinden
+# libraries, which the test executable needs to work
 target_link_libraries(${This} PUBLIC
+    # the googletests are needed
     GTest::gmock
     GTest::gtest
     GTest::gmock_main
-    GTest::gtest_main)
-#   Ort der Datei, die durch die Tests geprueft werden soll (Datei zum eigentlichen Programmcode):
-#   Ort, der durch den Test zu pruefenden Datei -> ./../../src/main.cpp
-#    main.cpp)
-
+    GTest::gtest_main
+    # the libraries of the project, that we want to test
+    addition)
+# Adding the tests to googletest
 # [cmake series] (4) test with Google test | Develop Paper
 # https://developpaper.com/cmake-series-4-test-with-google-test/
 gtest_discover_tests(${This})
-
-# Vorgehen mit Ctest (das auch fuer googletest geht)/Standard vor gtest_add_tests()
-# Tell CMake its a actual UnitTest
-# add_test(
-#     NAME ${This}
-#     COMMAND ${This})
-
-
-
-# Locate GTest
-# find_package(GTest REQUIRED)
-# message(STATUS "GTEST_FOUND='${GTEST_FOUND}'")
-# message(STATUS "GTEST_INCLUDE_DIRS='${GTEST_INCLUDE_DIRS}'")
-# message(STATUS "GTEST_INCLUDE_DIR='${GTEST_INCLUDE_DIR}'")
-# include_directories(${GTEST_INCLUDE_DIRS})
-#
-#
-#
-#     add_executable(foo foo.cc)
-#     target_link_libraries(foo GTest::gtest GTest::gtest_main)
-#
 

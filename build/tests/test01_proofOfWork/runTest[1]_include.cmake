@@ -1,5 +1,5 @@
-if(EXISTS "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/tests/test01_proofOfWork/runTest[1]_tests.cmake")
-  include("/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/tests/test01_proofOfWork/runTest[1]_tests.cmake")
+if(EXISTS "/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/tests/test01_proofOfWork/runTest[1]_tests.cmake")
+  include("/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/tests/test01_proofOfWork/runTest[1]_tests.cmake")
 else()
   add_test(runTest_NOT_BUILT runTest_NOT_BUILT)
 endif()

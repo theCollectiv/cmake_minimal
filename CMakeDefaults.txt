@@ -1,14 +1,14 @@
-# Global setzen: CMake Standard setzen
+# Global settings (Projectwide): Setting the c++ standard (like c++11/14/17/20)
 set(CMAKE_CXX_STANDARD 17)
-# Global setzen: CMake Standard verbindlich machen
+## Global settings (Projectwide): Making the c++ standard mandatory
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
-# Alternative: Lokal setzen
-# Halb-global/halb-local setzen:
+# Alternative: set the c++ standard locally
+# setting it half-global/half-local
 # set_property(
 #     TARGET ${ZIEL}
 #     PROPERTY CXX_STANDARD_REQUIRED ON
 #     )
-# Alternative : local setzen
+# Alternative : set it just local
 # set_target_properties(
 #     ${ZIEL}
 #     PROPERTIES
@@ -16,13 +16,13 @@ set (CMAKE_CXX_STANDARD_REQUIRED ON)
 #         CXX_STANDARD_REQUIRED ON
 #     )
 
-# 1) Dem Debugger die Projectstructur via compile_commands.json uebergeben
-# 2) Crossfile Texterkennung fuer CodeCompletion
-# Erzeugt eine compile_commands.json im buildverzeichnis, welche per hard/softlink in das hauptverzeichnis gespiegelt werden muss. Dort bildet sie die Projectstructur ab (wichtig fuer Debugger, der eine Projectstructur braucht)
-# ! Muss vor add_library stehen
+# 1) Passing the Debugger the projectstructure via compile_commands.json
+# 2) Providing Crossfile / predictiv text for CodeCompletion
+# 3) builds a compile_commands.json in the build dir, which got to be hard/soft linked in the main dir of the project. Important vor the debugger, which needs the projectstructure
+# ! has to be defined before add_library
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# Compilerflags setzen
+# adding the compileflags
 # debugmode: -ggdb3
-# releasemode: optimiertes compilen
+# releasemode: optimized compiling
 add_compile_options(-ggdb3 -Werror -Wall -Wextra -pedantic-errors -Wconversion -Wsign-conversion)

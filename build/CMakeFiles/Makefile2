@@ -54,10 +54,10 @@ RM = /snap/cmake/936/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable
+CMAKE_SOURCE_DIR = /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build
+CMAKE_BINARY_DIR = /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -100,14 +100,14 @@ tests/test01_proofOfWork/clean: tests/test01_proofOfWork/CMakeFiles/runTest.dir/
 CMakeFiles/addition.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/addition.dir/build.make CMakeFiles/addition.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/addition.dir/build.make CMakeFiles/addition.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles --progress-num=1,2 "Built target addition"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles --progress-num=1,2 "Built target addition"
 .PHONY : CMakeFiles/addition.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/addition.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/addition.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles 0
 .PHONY : CMakeFiles/addition.dir/rule
 
 # Convenience name for target.
@@ -126,14 +126,14 @@ CMakeFiles/addition.dir/clean:
 CMakeFiles/finalExecutable.dir/all: CMakeFiles/addition.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/finalExecutable.dir/build.make CMakeFiles/finalExecutable.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/finalExecutable.dir/build.make CMakeFiles/finalExecutable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles --progress-num=3,4 "Built target finalExecutable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles --progress-num=3,4 "Built target finalExecutable"
 .PHONY : CMakeFiles/finalExecutable.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/finalExecutable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/finalExecutable.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles 0
 .PHONY : CMakeFiles/finalExecutable.dir/rule
 
 # Convenience name for target.
@@ -149,17 +149,17 @@ CMakeFiles/finalExecutable.dir/clean:
 # Target rules for target tests/test01_proofOfWork/CMakeFiles/runTest.dir
 
 # All Build rule for target.
-tests/test01_proofOfWork/CMakeFiles/runTest.dir/all:
+tests/test01_proofOfWork/CMakeFiles/runTest.dir/all: CMakeFiles/addition.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/test01_proofOfWork/CMakeFiles/runTest.dir/build.make tests/test01_proofOfWork/CMakeFiles/runTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/test01_proofOfWork/CMakeFiles/runTest.dir/build.make tests/test01_proofOfWork/CMakeFiles/runTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles --progress-num=5,6 "Built target runTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles --progress-num=5,6 "Built target runTest"
 .PHONY : tests/test01_proofOfWork/CMakeFiles/runTest.dir/all
 
 # Build rule for subdir invocation for target.
 tests/test01_proofOfWork/CMakeFiles/runTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test01_proofOfWork/CMakeFiles/runTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles 0
 .PHONY : tests/test01_proofOfWork/CMakeFiles/runTest.dir/rule
 
 # Convenience name for target.

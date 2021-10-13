@@ -57,10 +57,10 @@ RM = /snap/cmake/936/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable
+CMAKE_SOURCE_DIR = /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build
+CMAKE_BINARY_DIR = /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +97,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/tests/test01_proofOfWork//CMakeFiles/progress.marks
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test01_proofOfWork/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles 0
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/tests/test01_proofOfWork//CMakeFiles/progress.marks
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test01_proofOfWork/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test01_proofOfWork/clean
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test01_proofOfWork/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +113,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test01_proofOfWork/preinstall
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test01_proofOfWork/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test01_proofOfWork/preinstall
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test01_proofOfWork/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/test01_proofOfWork/CMakeFiles/runTest.dir/rule:
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test01_proofOfWork/CMakeFiles/runTest.dir/rule
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/test01_proofOfWork/CMakeFiles/runTest.dir/rule
 .PHONY : tests/test01_proofOfWork/CMakeFiles/runTest.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ runTest: tests/test01_proofOfWork/CMakeFiles/runTest.dir/rule
 
 # fast build rule for target.
 runTest/fast:
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(MAKE) $(MAKESILENT) -f tests/test01_proofOfWork/CMakeFiles/runTest.dir/build.make tests/test01_proofOfWork/CMakeFiles/runTest.dir/build
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(MAKE) $(MAKESILENT) -f tests/test01_proofOfWork/CMakeFiles/runTest.dir/build.make tests/test01_proofOfWork/CMakeFiles/runTest.dir/build
 .PHONY : runTest/fast
 
 tests.o: tests.cpp.o
@@ -145,7 +145,7 @@ tests.o: tests.cpp.o
 
 # target to build an object file
 tests.cpp.o:
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(MAKE) $(MAKESILENT) -f tests/test01_proofOfWork/CMakeFiles/runTest.dir/build.make tests/test01_proofOfWork/CMakeFiles/runTest.dir/tests.cpp.o
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(MAKE) $(MAKESILENT) -f tests/test01_proofOfWork/CMakeFiles/runTest.dir/build.make tests/test01_proofOfWork/CMakeFiles/runTest.dir/tests.cpp.o
 .PHONY : tests.cpp.o
 
 tests.i: tests.cpp.i
@@ -153,7 +153,7 @@ tests.i: tests.cpp.i
 
 # target to preprocess a source file
 tests.cpp.i:
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(MAKE) $(MAKESILENT) -f tests/test01_proofOfWork/CMakeFiles/runTest.dir/build.make tests/test01_proofOfWork/CMakeFiles/runTest.dir/tests.cpp.i
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(MAKE) $(MAKESILENT) -f tests/test01_proofOfWork/CMakeFiles/runTest.dir/build.make tests/test01_proofOfWork/CMakeFiles/runTest.dir/tests.cpp.i
 .PHONY : tests.cpp.i
 
 tests.s: tests.cpp.s
@@ -161,7 +161,7 @@ tests.s: tests.cpp.s
 
 # target to generate assembly for a file
 tests.cpp.s:
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(MAKE) $(MAKESILENT) -f tests/test01_proofOfWork/CMakeFiles/runTest.dir/build.make tests/test01_proofOfWork/CMakeFiles/runTest.dir/tests.cpp.s
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(MAKE) $(MAKESILENT) -f tests/test01_proofOfWork/CMakeFiles/runTest.dir/build.make tests/test01_proofOfWork/CMakeFiles/runTest.dir/tests.cpp.s
 .PHONY : tests.cpp.s
 
 # Help Target
@@ -188,6 +188,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

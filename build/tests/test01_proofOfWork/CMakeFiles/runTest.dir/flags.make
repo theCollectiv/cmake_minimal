@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DGTEST_LINKED_AS_SHARED_LIBRARY=1
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/include/addition
 
 CXX_FLAGS = -ggdb3 -Werror -Wall -Wextra -pedantic-errors -Wconversion -Wsign-conversion -DGTEST_HAS_PTHREAD=1 -std=gnu++17
 

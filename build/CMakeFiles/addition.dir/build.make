@@ -53,10 +53,10 @@ RM = /snap/cmake/936/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable
+CMAKE_SOURCE_DIR = /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build
+CMAKE_BINARY_DIR = /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/addition.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/addition.dir/flags.make
 CMakeFiles/addition.dir/src/addition/addition.cpp.o: CMakeFiles/addition.dir/flags.make
 CMakeFiles/addition.dir/src/addition/addition.cpp.o: ../src/addition/addition.cpp
 CMakeFiles/addition.dir/src/addition/addition.cpp.o: CMakeFiles/addition.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/addition.dir/src/addition/addition.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/addition.dir/src/addition/addition.cpp.o -MF CMakeFiles/addition.dir/src/addition/addition.cpp.o.d -o CMakeFiles/addition.dir/src/addition/addition.cpp.o -c /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/src/addition/addition.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/addition.dir/src/addition/addition.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/addition.dir/src/addition/addition.cpp.o -MF CMakeFiles/addition.dir/src/addition/addition.cpp.o.d -o CMakeFiles/addition.dir/src/addition/addition.cpp.o -c /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/src/addition/addition.cpp
 
 CMakeFiles/addition.dir/src/addition/addition.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/addition.dir/src/addition/addition.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/src/addition/addition.cpp > CMakeFiles/addition.dir/src/addition/addition.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/src/addition/addition.cpp > CMakeFiles/addition.dir/src/addition/addition.cpp.i
 
 CMakeFiles/addition.dir/src/addition/addition.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/addition.dir/src/addition/addition.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/src/addition/addition.cpp -o CMakeFiles/addition.dir/src/addition/addition.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/src/addition/addition.cpp -o CMakeFiles/addition.dir/src/addition/addition.cpp.s
 
 # Object files for target addition
 addition_OBJECTS = \
@@ -93,7 +93,7 @@ addition_EXTERNAL_OBJECTS =
 libaddition.a: CMakeFiles/addition.dir/src/addition/addition.cpp.o
 libaddition.a: CMakeFiles/addition.dir/build.make
 libaddition.a: CMakeFiles/addition.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libaddition.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libaddition.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/addition.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/addition.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/addition.dir/clean:
 .PHONY : CMakeFiles/addition.dir/clean
 
 CMakeFiles/addition.dir/depend:
-	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/006_template_2_gtest_Extendable/build/CMakeFiles/addition.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build /home/metamorph/00_data/100__programming/10_cpp/001_BasicStructure/007_template_2_gtest_Extendable_github/build/CMakeFiles/addition.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/addition.dir/depend
 

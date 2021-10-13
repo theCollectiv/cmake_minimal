@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/runTest.dir/tests.cpp.o -o runTest  -Wl,-rpath,/usr/local/lib /usr/local/lib/libgmock_main.so /usr/local/lib/libgtest_main.so /usr/local/lib/libgmock.so /usr/local/lib/libgtest.so -lpthread 
+/usr/bin/c++ CMakeFiles/runTest.dir/tests.cpp.o -o runTest  -Wl,-rpath,/usr/local/lib /usr/local/lib/libgmock_main.so /usr/local/lib/libgtest_main.so ../../libaddition.a /usr/local/lib/libgmock.so /usr/local/lib/libgtest.so -lpthread 
