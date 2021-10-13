@@ -1,0 +1,28 @@
+# Global setzen: CMake Standard setzen
+set(CMAKE_CXX_STANDARD 17)
+# Global setzen: CMake Standard verbindlich machen
+set (CMAKE_CXX_STANDARD_REQUIRED ON)
+# Alternative: Lokal setzen
+# Halb-global/halb-local setzen:
+# set_property(
+#     TARGET ${ZIEL}
+#     PROPERTY CXX_STANDARD_REQUIRED ON
+#     )
+# Alternative : local setzen
+# set_target_properties(
+#     ${ZIEL}
+#     PROPERTIES
+#         CXX_STANDARD 17
+#         CXX_STANDARD_REQUIRED ON
+#     )
+
+# 1) Dem Debugger die Projectstructur via compile_commands.json uebergeben
+# 2) Crossfile Texterkennung fuer CodeCompletion
+# Erzeugt eine compile_commands.json im buildverzeichnis, welche per hard/softlink in das hauptverzeichnis gespiegelt werden muss. Dort bildet sie die Projectstructur ab (wichtig fuer Debugger, der eine Projectstructur braucht)
+# ! Muss vor add_library stehen
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# Compilerflags setzen
+# debugmode: -ggdb3
+# releasemode: optimiertes compilen
+add_compile_options(-ggdb3 -Werror -Wall -Wextra -pedantic-errors -Wconversion -Wsign-conversion)
